@@ -36,17 +36,17 @@ IF @cnt > 0
 		DECLARE @tableHTML  NVARCHAR(MAX) ;
 
 		SET @tableHTML =
-			N'<H1><font color=&quot;#FF0000&quot;>Expiring Subscription Report</font></H1>' +
-			N'<table border=&quot;0&quot; cellspacing=&quot;2&quot; cellpadding=&quot;2&quot;>' +
-			N'<tr><th bgcolor=&quot;#BDBDBD&quot;>Subscriber</th>' +
-						N'<th bgcolor=&quot;#BDBDBD&quot;>Status</th>
-							<th bgcolor=&quot;#BDBDBD&quot;>Delivery Rate</th>
-							<th bgcolor=&quot;#BDBDBD&quot;>Last Sync</th>' +
-						N'<th bgcolor=&quot;#BDBDBD&quot;>Duration</th>
-							<th bgcolor=&quot;#BDBDBD&quot;>Conn Type</th>
-							<th bgcolor=&quot;#BDBDBD&quot;>Result</th>
-							<th bgcolor=&quot;#BDBDBD&quot;>Days Behind</th>					
-						  <th bgcolor=&quot;#BDBDBD&quot;>Subscriber Status</th></tr>' +
+			N'<H1><font color="#FF0000">Expiring Subscription Report</font></H1>' +
+			N'<table border="0" cellspacing="2" cellpadding="2">' +
+			N'<tr><th bgcolor="#BDBDBD">Subscriber</th>' +
+						N'<th bgcolor="#BDBDBD">Status</th>
+							<th bgcolor="#BDBDBD">Delivery Rate</th>
+							<th bgcolor="#BDBDBD">Last Sync</th>' +
+						N'<th bgcolor="#BDBDBD">Duration</th>
+							<th bgcolor="#BDBDBD">Conn Type</th>
+							<th bgcolor="#BDBDBD">Result</th>
+							<th bgcolor="#BDBDBD">Days Behind</th>					
+						  <th bgcolor="#BDBDBD">Subscriber Status</th></tr>' +
 			CAST ( ( 
 
 		SELECT
